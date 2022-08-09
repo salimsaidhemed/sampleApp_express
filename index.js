@@ -24,7 +24,8 @@ app.use('/',Authenticatedroute)
 
 Authenticatedroute.use(
     (req,res,next)=>{
-        let accessTokenFromClient = req.headers.accesstoken;
+        // let accessTokenFromClient = req.headers.accesstoken;
+        let accessTokenFromClient = req.headers['authorization'];
         if (!accessTokenFromClient) return res.status(401).send("Access Token missing from header");
         cognitoExpress.validate(accessTokenFromClient,(err,response)=>{
             if (err) return res.status(401).send(err);
