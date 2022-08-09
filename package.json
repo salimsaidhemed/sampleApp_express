@@ -1,0 +1,22 @@
+{
+  "name": "sampleapp_express",
+  "version": "1.0.0",
+  "description": "A Sample App to test AWS Cognito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salimsaidhemed/sampleApp_express.git"
+  },
+  "author": "Salim Said Hemed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salimsaidhemed/sampleApp_express/issues"
+  },
+  "homepage": "https://github.com/salimsaidhemed/sampleApp_express#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
