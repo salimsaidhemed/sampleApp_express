@@ -3,7 +3,6 @@ const express = require("express")
 const app = express()
 const Authenticatedroute = express.Router()
 const { engine } = require('express-handlebars')
-CognitoExpress = require("cognito-express")
 
 const cognitoExpress = new CognitoExpress(
     {
